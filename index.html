@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DressBloom - Elegant Dresses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <nav class="navbar">
+        <div class="logo">JAZZPORT</div>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="navlinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="shop.html">Order</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Elegance, Redefined</h1>
+        <p>
+            Discover timeless dresses crafted for comfort and style — launching
+            soon!
+        </p>
+        <a href="https://chat.whatsapp.com/LfPFx7RQCWx7P9C6zAhp3P" target="_blank" class="btn">Order</a>
+    </section>
+
+    <section class="products" id="shop">
+        <h2 style="text-align: center; font-family: 'Playfair Display'">
+            Shop Dresses
+        </h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/image1.jpg" alt="Floral Maxi Dress" />
+                <h3>Floral Maxi</h3>
+                <p>₹550</p>
+                <button class="btn-1"><a href="https://chat.whatsapp.com/LfPFx7RQCWx7P9C6zAhp3P">Add to
+                        Cart</a></button>
+            </div>
+            <div class="product-card">
+                <img src="images/image2.jpg" alt="Summer Chic" />
+                <h3>Summer Chic</h3>
+                <p>₹590</p>
+                <button class="btn-1"><a href="https://chat.whatsapp.com/LfPFx7RQCWx7P9C6zAhp3P">Add to
+                        Cart</a></button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+        <div id="shopmore"><button class="btn-1"><a href="shop.html">Shop More</a></button></div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2>About JAZZPORT</h2>
+            <p>
+                At <strong>JAZZPORT</strong>, we believe every woman deserves to feel elegant, confident, and stylish
+                — every day.
+                Our carefully curated collection features modern, modest, and trendy dresses perfect for every occasion.
+            </p>
+            <p>
+                From casual wear to festive Ramadan specials, each piece is handpicked to reflect both beauty and
+                comfort.
+                We're a small business with a big dream: to deliver premium fashion at affordable prices, with love and
+                care in every order.
+            </p>
+            <p>
+                Thank you for supporting a women-led brand that’s committed to celebrating individuality, modesty, and
+                strength.
+            </p>
+        </div>
+    </section>
+
+    <section class="Contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>order your favorite styles before we launch!</p>
+        <span>mail: JazzPort27@gmail.com</span><br>
+        <span><button class="btn-1"><a href="https://chat.whatsapp.com/LfPFx7RQCWx7P9C6zAhp3P" target="_blank">Join
+                    Whatsapp</a></button></span>
+    </section>
+
+
+    <script>
+        // Toggle the mobile menu
+        const hamburger = document.querySelector('.hamburger');
+        const navlinks = document.querySelector('.nav-links');
+        let menuOpen = false;
+
+        hamburger.addEventListener('click', () => {
+            if (menuOpen == false) {
+                navlinks.style.display = "block";
+                menuOpen = true;
+            }
+            else if (menuOpen == true) {
+                navlinks.style.display = "none";
+                menuOpen = false;
+            }
+        });
+    </script>
+        <script>
+            var loader = document.getElementById("preloader");
+    
+            window.addEventListener("load", function(){
+                loader.style.display = "none";
+            })
+    
+        </script>
+</body>
+
+</html>
