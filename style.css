@@ -84,6 +84,7 @@ body {
     padding: 4rem 2rem;
     text-align: center;
     background: #f8e1e7;
+    animation: fadeInUp 2s ease;
 }
 
 #home h1 {
@@ -109,6 +110,7 @@ body {
 
 .products {
     padding: 3rem 2rem;
+    animation: fadeInDown 2s ease;
 }
 
 .product-grid {
@@ -220,6 +222,7 @@ body {
         font-size: 28px;
     }
     .about-container{
+
     }
 }
 
@@ -230,4 +233,25 @@ body {
     width: 100%;
     position: fixed;
     z-index: 100;
+}
+
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
