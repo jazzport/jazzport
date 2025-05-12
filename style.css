@@ -238,8 +238,7 @@ body {
 img{
     animation: image-fade linear;
     animation-timeline: view();
-    animation-range-start: 100px;
-    animation-range-end: 700px;
+    animation-range: entry;
 }
 
 @keyframes image-fade{
