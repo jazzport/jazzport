@@ -235,6 +235,18 @@ body {
     z-index: 100;
 }
 
+img{
+    animation: image-fade linear;
+    animation-timeline: view();
+    animation-range-start: 100px;
+    animation-range-end: 700px;
+}
+
+@keyframes image-fade{
+    from{scale: .8; opacity: 0;}
+    to{scale: 1; opacity: 1;}
+}
+
 @keyframes fadeInUp{
     0%{
         opacity: 0;
